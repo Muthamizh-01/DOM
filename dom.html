@@ -13,21 +13,31 @@
   </head>
 
   <body>
-    <h1 class="green">Hello World!</h1>
+    <h1 class="green" id="heading">Hello World!</h1>
     <h1>Hello Javascript</h1>
     <p class="green">this is related to getelement by class name</p>
 
     <script>
       /*  here the data hello muthamizh is displayed overpowering the para tag in html
-     thereby we can alter the datas via javascript in HTML with the help of DOM
-      let paragraph = document.getElementsByTagName("p")[0];
-      //console.log(paragraph.textContent);
+      thereby we can alter the datas via javascript in HTML with the help of DOM
+       let paragraph = document.getElementsByTagName("p")[0];
+       //console.log(paragraph.textContent);
 
-      paragraph.textContent = "hello muthamizh"; */
+       paragraph.textContent = "hello muthamizh"; */
+
+      /* get element by class name
 
       let greentexts = document.getElementsByClassName("green");
-      console.log(greentexts[0]);
-      console.log(greentexts[1]);
+       console.log(greentexts[0]);
+       console.log(greentexts[1]); */
+
+      // here elements are accessed using ID
+      let head = document.getElementById("heading");
+      console.log(head);
+      // output for the above code - <h1 class="green" id="heading">Hello World!</h1>
+
+      console.log(head.textContent);
+      // output - Hello World!
     </script>
   </body>
 </html>
