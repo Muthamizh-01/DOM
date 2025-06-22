@@ -16,6 +16,7 @@
     <h1 class="green" id="heading">Hello World!</h1>
     <h1>Hello Javascript</h1>
     <p class="green">this is related to getelement by class name</p>
+    <p class="green red">extra statement</p>
 
     <script>
       /*  here the data hello muthamizh is displayed overpowering the para tag in html
@@ -25,19 +26,34 @@
 
        paragraph.textContent = "hello muthamizh"; */
 
+      //---------------------------------------------------
+
       /* get element by class name
 
       let greentexts = document.getElementsByClassName("green");
        console.log(greentexts[0]);
        console.log(greentexts[1]); */
 
-      // here elements are accessed using ID
+      //---------------------------------------
+
+      /* // here elements are accessed using ID
       let head = document.getElementById("heading");
       console.log(head);
       // output for the above code - <h1 class="green" id="heading">Hello World!</h1>
 
       console.log(head.textContent);
-      // output - Hello World!
+      // output - Hello World!   */
+
+      //----------------------------------
+      // query selector - here we can select all the elemebnts witgh id, class or tag
+      // /* by tag name*/ console.log(document.querySelector("p"));
+      // /* by class name*/ console.log(document.querySelector(".green"));
+      // /* by id name*/ console.log(document.querySelector("#heading"));
+
+      //------------------------------------------------
+
+      //queryselectorall
+      console.log(document.querySelectorAll(".green"));
     </script>
   </body>
 </html>
